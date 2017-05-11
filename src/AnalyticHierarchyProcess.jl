@@ -5,15 +5,14 @@ module AnalyticHierarchyProcess
 
 using Compat
 
-using ExcelReaders
-using PyPlot
+
 export 
 
 grupal 
 
-function grupal(X,Y,D,M)  
+function eigen(X)  
 
-data = M
+data = X
 Z=data
 A=sum(data,1)
 Anorm=data./A
