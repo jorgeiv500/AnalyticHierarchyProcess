@@ -8,11 +8,11 @@ using Compat
 
 export 
 
-eigen
+eigenv
 
-function eigen(X)  
+function eigenv(x)  
 
-data = X
+data = x
 Z=data
 A=sum(data,1)
 Anorm=data./A
@@ -61,9 +61,7 @@ WCRIT=sumafilas/sum(sumafilas)
 println("
     5. El Wi de criterios es=",WCRIT)
 
-return 
-    
-WCRIT
+return   WCRIT
     
 end
 
