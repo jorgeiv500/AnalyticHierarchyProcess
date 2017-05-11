@@ -6,9 +6,7 @@ module AnalyticHierarchyProcess
 using Compat
 
 
-export 
-
-eigenv
+export eigenv
 
 function eigenv(x)  
 
