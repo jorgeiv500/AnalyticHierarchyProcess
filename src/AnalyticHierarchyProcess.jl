@@ -1,11 +1,15 @@
+__precompile__()
 module AnalyticHierarchyProcess
 
 # package code goes here
 
-using Compat: view
+using Compat
+
 using ExcelReaders
 using PyPlot
-export grupal 
+export 
+
+grupal 
 
 function grupal(X,Y,D)  
 
