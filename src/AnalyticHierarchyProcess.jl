@@ -8,6 +8,13 @@ using Compat:view
 
 export eigenv
 
+
+function print_rgb(r, g, b, t)
+           print("\e[1m\e[38;2;$r;$g;$b;249m",t)
+       end
+
+
+
 function eigenv(x)  
 
 data = x
@@ -18,6 +25,9 @@ tam=length(Z[1,:])
 wprom=sum(Anorm,2)/tam
 Awprom=Z*wprom
 lambdamax=mean(Awprom./wprom)
+     print_with_color(:blue,"
+        
+        INFORME DE RESULTADOS ")  
 println("
     ________CRITERIOS___________________________")
 println("
@@ -62,5 +72,7 @@ println("
 return   WCRIT
     
 end
+
+
 
 end # module
