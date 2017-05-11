@@ -35,7 +35,7 @@ Pairwaise=[1 1/4 4;
 
 eigenv(Pairwaise)
 
-```
+
         
         INFORME DE RESULTADOS 
     ________CRITERIOS___________________________
@@ -49,8 +49,10 @@ eigenv(Pairwaise)
     4. CR =0.035754687055295796
 
     5. El Wi de criterios es=[0.217166; 0.717065; 0.0657693]
+
 Out[6]:
 3×1 Array{Float64,2}:
  0.217166 
  0.717065 
  0.0657693
+```
