@@ -69,10 +69,7 @@ WCRIT=sumafilas/sum(sumafilas)
 println("
     5. El Wi de criterios es=",WCRIT)
 
-return   WCRIT 
-return            CR 
-  return          tam 
-    return        CI
+return   WCRIT , CR, tam ,CI
     
 end
 
