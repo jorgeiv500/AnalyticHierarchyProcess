@@ -3,8 +3,10 @@ module AnalyticHierarchyProcess
 # package code goes here
 
 using Compat: view
-
+using ExcelReaders
+using PyPlot
 export grupal 
+
 function grupal(X,Y,D)  
 
 data = readxlsheet("AHP.xlsx", "criterios")
