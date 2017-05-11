@@ -36,6 +36,7 @@ Pairwaise=[1 1/4 4;
 eigenv(Pairwaise)
 
 
+```julia
         
         INFORME DE RESULTADOS 
     ________CRITERIOS___________________________
