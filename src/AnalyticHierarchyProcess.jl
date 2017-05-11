@@ -3,7 +3,7 @@ module AnalyticHierarchyProcess
 
 # package code goes here
 
-using Compat
+using Compat:view
 
 
 export eigenv
