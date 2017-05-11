@@ -8,7 +8,7 @@ using Compat
 
 export 
 
-grupal 
+eigen
 
 function eigen(X)  
 
