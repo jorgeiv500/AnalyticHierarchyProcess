@@ -9,7 +9,7 @@ The `AnalyticHierarchyProcess` package currently provides the eigenweigths consi
 As described in the julia manual, to [install unregistered packages][unregistered], use `Pkg.clone()` with the repository url:
 
 ```julia
-Pkg.clone("https://github.com/jorgeiv500/AnalyticHierarchyProcess")
+Pkg.clone("https://github.com/jorgeiv500/AnalyticHierarchyProcess.git")
 ```
 
 Julia version 0.5 or higher is required (install instructions [here][version]).
