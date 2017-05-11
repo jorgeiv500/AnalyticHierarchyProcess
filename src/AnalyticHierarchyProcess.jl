@@ -1,4 +1,4 @@
-__precompile__()
+
 module AnalyticHierarchyProcess
 
 # package code goes here
