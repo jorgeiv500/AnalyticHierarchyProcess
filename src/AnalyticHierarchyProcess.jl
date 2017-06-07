@@ -63,7 +63,7 @@ end
 
 println("
     4. CR =",CR)
-M=Z^300
+M=Z^100
 sumafilas=sum(M,2)
 WCRIT=sumafilas/sum(sumafilas)
 println("
