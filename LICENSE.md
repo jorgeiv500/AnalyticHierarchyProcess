@@ -1,6 +1,6 @@
 The AnalyticHierarchyProcess.jl package is licensed under the MIT "Expat" License:
 
-> Copyright (c) 2017: jorge ivan romero.
+> Copyright (c) 2017: jorge ivan romero, felix antonio cortes.
 > 
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
