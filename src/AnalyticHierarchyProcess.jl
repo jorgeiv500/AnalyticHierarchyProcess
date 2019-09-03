@@ -40,9 +40,9 @@ println("
     3. SIZE=",tam)
 
 if tam==1  
-    CR=CI/0.00
+    CR=0.00
 elseif tam==2  
-    CR=CI/0.00
+    CR=0.00
 elseif tam==3  
     CR=CI/0.52
 elseif tam==4
