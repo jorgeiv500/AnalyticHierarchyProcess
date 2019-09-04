@@ -1,22 +1,14 @@
 
-module AnalyticHierarchyProcess
-
-# package code goes here
+module AHP
 
 using Compat:view
-
-
-export eigenv,CRA
-
+export eigenv,CRA,lmax
 
 function print_rgb(r, g, b, t)
            print("\e[1m\e[38;2;$r;$g;$b;249m",t)
        end
 
-
-
-function eigenv(x)  
-
+function lmax(x)  
 data = x
 Z=data
 A=sum(data,1)
@@ -25,13 +17,19 @@ tam=length(Z[1,:])
 wprom=sum(Anorm,2)/tam
 Awprom=Z*wprom
 lambdamax=mean(Awprom./wprom)
-     print_with_color(:blue,"
-        
-        INFORME DE RESULTADOS ")  
-println("
-    ________CRITERIOS___________________________")
-println("
-    1. LAMBDA MAX=",lambdamax)
+return lambdamax
+           
+end
+function eigenv(x)  
+data = x
+Z=data
+A=sum(data,1)
+Anorm=data./A
+tam=length(Z[1,:])
+wprom=sum(Anorm,2)/tam
+Awprom=Z*wprom
+lambdamax=mean(Awprom./wprom)
+     
 if tam==1
                       CI=0
            elseif tam==2
