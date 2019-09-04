@@ -37,11 +37,6 @@ if tam==1
            CI=(lambdamax-tam)/(tam-1)
            end
 
-println("
-    2. CI =",CI)
-println("
-    3. SIZE=",tam)
-
 if tam==1  
     CR=0.00
 elseif tam==2  
@@ -68,7 +63,7 @@ M=Z^100
 sumafilas=sum(M,2)
 WCRIT=sumafilas/sum(sumafilas)
 else
-WCRIT=1/tam
+WCRIT=[1/tam;1/tam]
 end
 
 return   WCRIT
