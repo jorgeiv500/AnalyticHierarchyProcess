@@ -2,12 +2,10 @@
 module AHP
 
 using Compat:view
+
 export eigenv,CRA,lmax
 
-function print_rgb(r, g, b, t)
-           print("\e[1m\e[38;2;$r;$g;$b;249m",t)
-       end
-
+# Funtion lambda max
 function lmax(x)  
 data = x
 Z=data
@@ -17,9 +15,10 @@ tam=length(Z[1,:])
 wprom=sum(Anorm,2)/tam
 Awprom=Z*wprom
 lambdamax=mean(Awprom./wprom)
-return lambdamax
-           
+return lambdamax          
 end
+
+#Function weigth
 function eigenv(x)  
 data = x
 Z=data
@@ -64,14 +63,13 @@ elseif tam==9
 elseif tam==10
     CR=CI/1.49
 end
-
-println("
-    4. CR =",CR)
+if tam>=3
 M=Z^100
 sumafilas=sum(M,2)
 WCRIT=sumafilas/sum(sumafilas)
-println("
-    5. El Wi de criterios es=",WCRIT)
+else
+WCRIT=1/tam
+end
 
 return   WCRIT
     
