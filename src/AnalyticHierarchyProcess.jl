@@ -1,5 +1,5 @@
 
-module AHP
+module AnalyticHierarchyProcess
 
 using Compat:view
 
