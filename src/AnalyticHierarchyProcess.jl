@@ -3,7 +3,7 @@ module AnalyticHierarchyProcess
 
 using Compat:view
 
-export eigenv,CRA,lmax
+export eigenv,CRA,lmax,ctriads
 
 # Funtion lambda max###############################################################
 function lmax(x)  
