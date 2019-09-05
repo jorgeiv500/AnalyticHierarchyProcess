@@ -20,6 +20,9 @@ Julia version 0.5 or higher is required (install instructions [here][version]).
 
 This package alow us to compute the eigenweigth from a n*n pairwaise comparison matrix and evaluate the inconsistency in the matrix.
 
+eigenv(x) = compute the eigenweigth from a n*n pairwaise comparison matrix
+CRA(x) = Consistency ratio from a n*n pairwaise comparison matrix
+triads(x,t) =  evaluate the inconsistency in all circular triads from a n*n pairwaise comparison matrix. 
 ## Example
 
 The simple example below is based on https://en.wikipedia.org/wiki/Analytic_hierarchy_process_–_leader_example#Pairwise_comparisons 
@@ -34,8 +37,10 @@ using AnalyticHierarchyProcess
 Pairwaise=[1 1/4 4;
            4  1  9;
            1/4 1/9 1]
-
-eigenv(Pairwaise)
+t=
+println(eigenv(Pairwaise))
+println(CRA(Pairwaise))
+println(triads(Pairwaise,t))
 ```
 
 Out[6]:
