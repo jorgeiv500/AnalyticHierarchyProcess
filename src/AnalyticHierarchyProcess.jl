@@ -5,7 +5,7 @@ using Compat:view
 
 export eigenv,CRA,lmax
 
-# Funtion lambda max
+# Funtion lambda max###############################################################
 function lmax(x)  
 data = x
 Z=data
@@ -18,7 +18,7 @@ lambdamax=mean(Awprom./wprom)
 return lambdamax          
 end
 
-#Function weigth
+#Function weigth###############################################################
 function eigenv(x)  
 data = x
 Z=data
@@ -70,7 +70,7 @@ return   WCRIT
     
 end
 
-function CRA(x)  
+function CRA(x)  ############################################################################################
 data = x
 Z=data
 A=sum(data,1)
@@ -111,5 +111,26 @@ elseif tam==10
 end
 
 return CR
+end
+function ctriads(t,Criteria) #####################################################################
+     c=[]
+for T=1:length(t)
+
+ai=Criteria[t[T][1], t[T][2]]
+aj=Criteria[t[T][1], t[T][3]]
+ak=Criteria[t[T][2], t[T][3]]
+
+m=[1    ai   aj
+  1/ai  1    ak
+  1/aj  1/ak 1]
+ co=CRA(m)
+push!(c,co)
+end
+print(c)
+dt=DataFrame(triad=t,CR=c)
+order=sort!(dt, cols = (order(:CR, rev = true)))
+
+return order
+     
 end
 end # module
