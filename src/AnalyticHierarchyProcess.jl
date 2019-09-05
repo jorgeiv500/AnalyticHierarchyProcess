@@ -1,7 +1,7 @@
 
 module AnalyticHierarchyProcess
-
-using Compat:view , DataFrames
+import DataFrames
+using Compat:view 
 
 export eigenv,CRA,lmax,ctriads
 
