@@ -128,9 +128,9 @@ push!(c,co)
 end
 print(c)
 dt=DataFrame(triad=t,CR=c)
-order=sort!(dt, cols = (order(:CR, rev = true)))
 
-return order
+
+return order=sort!(dt, cols = (order(:CR, rev = true)))
      
 end
 end # module
