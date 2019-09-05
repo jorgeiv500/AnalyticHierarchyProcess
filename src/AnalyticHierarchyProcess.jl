@@ -1,6 +1,6 @@
 
 module AnalyticHierarchyProcess
-using DataFrames
+
 using Compat:view 
 
 export eigenv,CRA,lmax,ctriads
@@ -126,11 +126,8 @@ m=[1    ai   aj
  co=CRA(m)
 push!(c,co)
 end
-print(c)
-dt=DataFrame(triad=t,CR=c)
 
-
-return order=sort!(dt, cols = (order(:CR, rev = true)))
+return c
      
 end
 end # module
