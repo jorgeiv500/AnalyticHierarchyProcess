@@ -10,13 +10,15 @@ As described in the julia manual, to [install unregistered packages][unregistere
 
 ```julia
 Pkg.clone("https://github.com/jorgeiv500/AnalyticHierarchyProcess.git")
+
 ```
+
 
 Julia version 0.5 or higher is required (install instructions [here][version]).
 
 ## Usage
 
-This package alow us to compute the eigenweigth from a n*n pairwaise comparison matrix
+This package alow us to compute the eigenweigth from a n*n pairwaise comparison matrix and evaluate the inconsistency in the matrix.
 
 ## Example
 
