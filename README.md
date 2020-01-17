@@ -1,23 +1,23 @@
 # AnalyticHierarchyProcess
 
 
-The `AnalyticHierarchyProcess` package currently provides the eigenweigths consistency index and xonsistency ratio from a n*n matrix:
+El paquete `AnalyticHierarchyProcess` provee funciones para desarrollar tecnicas de toma de decisiones multicriterio como VIKOR, DEMATEL, AHP, Entropia.
 
+## Instalación
 
-## Installation
-
-As described in the julia manual, to [install unregistered packages][unregistered], use `Pkg.clone()` with the repository url:
+Tal como se describe el manual de julia, para instalar un paquete no registrado se utiliza el comando `Pkg.clone()`, de la siguiente manera:
 
 ```julia
 Pkg.clone("https://github.com/jorgeiv500/AnalyticHierarchyProcess.git")
 
 ```
 
+Es requerida la versión 0.5 o superior (puede encontrar aquí las instrucciones de instalación [here][version]).
 
-Julia version 0.5 or higher is required (install instructions [here][version]).
 
-## Usage
+## Uso
 
+Este paquete cuenta con 
 This package alow us to compute the eigenweigth from a n*n pairwaise comparison matrix and evaluate the inconsistency in the matrix.
 
 eigenv(x) = compute the eigenweigth from a n*n pairwaise comparison matrix
