@@ -58,12 +58,16 @@ elseif tam==9
 elseif tam==10
     CR=CI/1.49
 end
+     
 if tam>=3
 M=Z^100
 sumafilas=sum(M,2)
 WCRIT=sumafilas/sum(sumafilas)
 else
-WCRIT=[1/tam;1/tam]
+M=Z
+sumafilas=sum(M,2)
+WCRIT=sumafilas/sum(sumafilas)
+
 end
 
 return   WCRIT
