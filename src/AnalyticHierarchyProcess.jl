@@ -139,7 +139,7 @@ function entropia(m)
 a=size(m,1)
     k=-1/log(a)
     mnorm=m./sum(m,1)
-    mlog=mnorm.*log(mnorm)
+    mlog=mnorm.*log.(mnorm)
     sumcol=sum(mlog,1)
     entropia1=sumcol*k
     diversidad=1-entropia1
